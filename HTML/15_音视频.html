@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+      audio 标签用来向页面中引入一个外部音频文件
+      音视频文件引入时，默认情况下不允许用户操作
+      属性：
+        controls 是否允许用户控制播放
+        autoplay 音频文件是否自动播放
+            如果设置李autoplay 则音乐在打开页面时会自动播放
+            但是大部分浏览器都不会自动播放
+    -->
+
+    <!--
+      <audio src="./source/RADWIMPS - 最大公約数.mp3" controls loop></audio>
+    -->
+    <!--除了通过src制定路径，同时可以用source来制定文件
+      source用于解决兼容性问题-->
+    <audio controls>
+      <source src="./source/RADWIMPS - 最大公約数.mp3" />
+    </audio>
+    <!--使用方式和audio基本相似-->
+    <!--
+      <video src="./source/音乐.mp4" controls></video>
+    -->
+    <br />
+    <!--
+    <iframe
+      src="https://www.bilibili.com/video/BV17K411T7rt/"
+      frameborder="0"
+      width="1920px"
+      height="1080px"
+    ></iframe>
+    -->
+    <iframe
+      src="//player.bilibili.com/player.html?aid=499166172&bvid=BV17K411T7rt&cid=222120718&page=1"
+      scrolling="no"
+      border="0"
+      frameborder="no"
+      framespacing="0"
+      allowfullscreen="true"
+      width="1920px"
+      height="1080px"
+    >
+    </iframe>
+  </body>
+</html>
