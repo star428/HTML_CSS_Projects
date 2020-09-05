@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 为div的子元素span设置一个字体的颜色
+      
+        子元素选择器：
+            作用：选择制定父元素的制定子元素
+            语法：父元素 > 子元素 */
+      /* div.one > span {
+        color: aqua;
+      } */
+      div > p > span {
+        color: aquamarine;
+      }
+      /* 后代选择器：
+            作用：选中制定元素内的制定后代元素
+            语法：祖先 后代 */
+      div span {
+        color: blue;
+      }
+      /* 兄弟元素选择器：
+            作用：选择下一个兄弟(紧挨)
+            语法：前一个 + 下一个 */
+      /* 选择下面所有兄弟元素：
+            语法： 前一个 ～下一个 */
+
+      p + span {
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <!--父元素
+            -直接包含子元素的元素
+        子元素
+            -直接被父元素包含的元素
+        祖先元素
+            -直接或简介包含后代的元素
+            -一个元素的父元素也是它的祖先元素
+        后代元素
+            -直接或简介被祖先元素包含的元素
+        兄弟元素
+            =拥有相同父元素的元素 -->
+    <div class="one">
+      i'm div
+      <p>
+        i'm the part of the div
+        <span>i'm the part of the p</span>
+      </p>
+      <span>i'm the part of the div</span>
+    </div>
+    <div>
+      <span>hello</span>
+    </div>
+  </body>
+</html>

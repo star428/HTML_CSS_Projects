@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        color: red;
+      }
+      /* 交集选择器：
+          作用：选中同时复合多个条件的元素
+          语法：选择器1选择器2
+          交集选择器如果有元素选择器，必须使用元素选择器开头 */
+      div.red {
+        font-size: 20px;
+      }
+      /* 并级选择器：
+          作用：选中多个选择器选中的元素（组合多个选择器）
+          语法：选择器1,选择器2,选择器3 */
+      h1,
+      span {
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red">我是div</div>
+    <p class="red">我是p元素</p>
+    <h1>hello</h1>
+    <span>title</span>
+  </body>
+</html>
